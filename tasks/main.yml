@@ -12,8 +12,8 @@
 
 - name: Deploy sample site
   copy:
-    dest: /var/www/html/index.php
-    content: "<?php echo 'Hello IaC examinator'; ?>"
+    dest: /var/www/html/index.html
+    content: "<html>Hello IaC examinator</html>"
   notify: Restart apache
 
 - name: Enable apache service
